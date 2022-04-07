@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+vyQWzkzy6s8VLqG1Y+6LUSNisyU9C6jgOR/TLbRlz/9jo0x4A/34kRGU4EnqCwfkubwCM94b3v1oiwY/bwYLg==",
+  "success": true,
+  "projectFilePath": "D:\\Repos\\Others\\Generics\\Generics\\Generics.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cmudda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
