@@ -32,7 +32,8 @@ namespace Generics
             var con = new SqlConnection(str);
             var cmd = new SqlCommand();
 
-            cmd.CommandText = "SELECT ITEM,PRICE FROM PRODUCT WHERE ITEM_CATEGORY='" + firstName + "' ORDER BY PRICE";
+            cmd.CommandText = "SELECT ITEM,PRICE FROM PRODUCT WHERE ITEM_CATEGORY='" +
+                "" + firstName + "' ORDER BY PRICE";
             cmd.CommandType = CommandType.Text;
             cmd.Connection = con;
 
