@@ -21,6 +21,25 @@ namespace Generics
 
             Console.ReadKey();
         }
+        
+        public int Student(string firstName)
+        {
+            string str = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=..\\CodeQLDB.mdf;Integrated Security=True";
+            var con = new SqlConnection(str);
+            var cmd = new SqlCommand();
+
+            cmd.CommandText = $"INSERT INTO Student(FirstName) VALUES({firstName})";
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection = con;
+
+            con.Open();
+
+            var rowsUpdated = cmd.ExecuteNonQuery();
+
+            con.Close();
+
+            return rowsUpdated;
+        }
     }
 
     internal class GetValue<T>
