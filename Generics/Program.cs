@@ -26,7 +26,7 @@ namespace Generics
             Console.ReadKey();
         }
         
-        public int Student(string firstName)
+        public static int Student(string firstName)
         {
             string str = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=..\\CodeQLDB.mdf;Integrated Security=True";
             var con = new SqlConnection(str);
