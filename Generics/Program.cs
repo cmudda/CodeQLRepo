@@ -30,7 +30,8 @@ namespace Generics
             var con = new SqlConnection(str);
             var cmd = new SqlCommand();
 
-            cmd.CommandText = $"INSERT INTO Student(FirstName) VALUES({firstName})";
+            cmd.CommandText = "INSERT INTO Student(FirstName) " +
+                                "VALUES(" + firstName + ")";
             cmd.CommandType = CommandType.Text;
             cmd.Connection = con;
 
