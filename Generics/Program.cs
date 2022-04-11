@@ -20,6 +20,8 @@ namespace Generics
 
             intClass.PrintValue("Integer", intClass.Value);
             stringClass.PrintValue("String", stringClass.Value);
+            
+            Student("CBM");
 
             Console.ReadKey();
         }
